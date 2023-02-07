@@ -1,0 +1,39 @@
+# By Abdullah As-Sadeed
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteRule \.(webp|jpe?g|png|gif|svg) /GPEIMS/Error_404.webp [NC,L]
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<Files php.ini>
+order allow,deny
+deny from all
+</Files>
+
+Options -Indexes
+
+ErrorDocument 401 /GPEIMS/Error_401.php
+ErrorDocument 403 /GPEIMS/Error_403.php
+ErrorDocument 404 /GPEIMS/Error_404.php
+ErrorDocument 500 /GPEIMS/Error_500.php
+
+ServerSignature Off
+
+Header always set SADEED-Name "GhashPhul Educational Institution Management System (GPEIMS)"
+
+Header always set SADEED-Description "An educational institution management system"
+
+Header always set SADEED-By "Abdullah As-Sadeed"
+
+<IfModule pagespeed_module>
+ModPagespeed off
+</IfModule>
+

@@ -1,0 +1,62 @@
+@font-face {
+font-family: "Dancing Script";
+src: url("DancingScript.woff");
+}
+@font-face {
+font-family: "Roboto";
+font-weight: normal;
+src: url("Roboto_Regular.woff");
+}
+@font-face {
+font-family: "Roboto";
+font-weight: bold;
+src: url("Roboto_Bold.woff");
+}
+body {
+background-color: rgb(229, 229, 229);
+font-family: "Roboto", sans-serif;
+color: rgb(32, 33, 34);
+margin: 0;
+}
+* {
+box-sizing: border-box;
+user-select: none;
+}
+*:focus {
+outline: none;
+}
+h1 {
+width: 100%;
+background-color: rgb(95, 95, 95);
+padding: 10px 5px 10px 5px;
+text-align: center;
+font-family: "Dancing Script", cursive;
+font-size: 25px;
+color: white;
+font-weight: bold;
+margin: 0;
+}
+noscript {
+display: block;
+width: 100%;
+text-align: center;
+padding: 10px 20px 0 10px;
+font-weight: bold;
+color: red;
+}
+#printing_alert {
+width: 100%;
+text-align: center;
+color: red;
+font-weight: bold;
+display: none;
+margin-top: 200px;
+}
+@media print {
+#container {
+display: none;
+}
+#printing_alert {
+display: block;
+}
+}

@@ -1,0 +1,3 @@
+Sitemap: https://telechirkut.xyz/GPEIMS/sitemap.xml
+User-Agent: *
+Disallow:

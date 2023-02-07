@@ -1,0 +1,59 @@
+#container {
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-flow: column;
+}
+h1 {
+width: 100%;
+background-color: rgb(95, 95, 95);
+padding: 10px 0 10px 0;
+text-align: center;
+font-family: "Dancing Script", cursive;
+font-size: 25px;
+color: white;
+font-weight: bold;
+margin: 0;
+}
+#offline {
+display: none;
+width: 100%;
+background-color: yellow;
+padding: 5px;
+text-align: center;
+}
+#information {
+width: 100%;
+flex: 1;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+h2 {
+display: block;
+padding: 0 10px 0 10px;
+color: rgb(76, 175, 80);
+margin: 0 0 10px 0;
+}
+#error {
+padding: 0 10px 0 10px;
+line-height: 1.6;
+}
+#printing_alert {
+width: 100%;
+text-align: center;
+color: red;
+font-weight: bold;
+display: none;
+margin-top: 200px;
+}
+@media print {
+#container {
+display: none;
+}
+#printing_alert {
+display: block;
+}
+}

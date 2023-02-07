@@ -1,0 +1,43 @@
+{
+"short_name": "GPEIMS",
+"name": "GhashPhul Educational Institution Management System",
+"icons": [
+{
+"src": "/GPEIMS/Icon.png",
+"type": "image/png",
+"sizes": "192x192"
+},
+{
+"src": "/GPEIMS/Icon_2.png",
+"type": "image/png",
+"sizes": "512x512"
+}
+],
+"start_url": "/GPEIMS/",
+"background_color": "#FFFFFF",
+"display": "standalone",
+"scope": "/GPEIMS/",
+"theme_color": "#000000",
+"shortcuts": [
+{
+"name": "GPEIMS",
+"description": "An educational institution management system (by Abdullah As-Sadeed)",
+"url": "/GPEIMS/",
+"icons": [
+{
+"src": "/GPEIMS/Icon.png",
+"type": "image/png",
+"sizes": "192x192"
+}
+]
+}
+],
+"description": "An educational institution management system (by Abdullah As-Sadeed)",
+"screenshots": [
+{
+"src": "/GPEIMS/ScreenShot.jpeg",
+"type": "image/jpeg",
+"sizes": "540x720"
+}
+]
+}
